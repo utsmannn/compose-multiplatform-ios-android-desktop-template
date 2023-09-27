@@ -3,6 +3,7 @@ rootProject.name = "MyApplication"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":androidApp")
+include(":desktopApp")
 include(":shared")
 
 pluginManagement {

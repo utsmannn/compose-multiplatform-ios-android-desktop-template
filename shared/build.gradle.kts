@@ -18,6 +18,12 @@ kotlin {
         }
     }
 
+    jvm("desktop") {
+        compilations.all {
+            kotlinOptions.jvmTarget = "11"
+        }
+    }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -44,6 +50,7 @@ kotlin {
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
         }
+        val desktopMain by getting
     }
 }
 
